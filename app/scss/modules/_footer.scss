@@ -1,0 +1,85 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 145px 0;
+
+	@media screen and (max-width: 1200px) {
+		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 80px 0;
+	}
+
+	&__text {
+		font-family: $font-roboto-regular;
+		font-size: 18px;
+		line-height: 150%;
+		color: $color-black-pearl;
+		opacity: 0.7;
+		max-width: 260px;
+	}
+
+	&__mail {
+		font-family: $font-roboto-regular;
+		font-size: 16px;
+		line-height: 150%;
+		color: $color-black-pearl;
+		opacity: 0.7;
+		max-width: 260px;
+		padding: 30px 0 20px;
+	}
+
+	&__social-link {
+		padding-right: 30px;
+	}
+
+	&__nav {
+		width: 300px;
+		display: flex;
+		justify-content: space-between;
+
+		&-item {
+			padding: 10px 0;
+		}
+
+		&-link {
+			font-family: $font-roboto-500;
+			font-size: 16px;
+			line-height: 150%;
+			color: $color-black-pearl;
+			opacity: 0.7;
+		}
+
+		&-link-big {
+			font-family: $font-roboto-500;
+			font-size: 20px;
+			line-height: 150%;
+			color: $color-black-pearl;
+		}
+	}
+
+	&__subscribe {
+		@media screen and (max-width: 1200px) {
+			padding-top: 40px;
+		}
+
+		@media screen and (max-width: 900px) {
+			padding-top: 40px;
+		}
+
+		&-text {
+			font-family: $font-roboto-500;
+			font-size: 20px;
+			line-height: 150%;
+			color: $color-black-pearl;
+		}
+	}
+
+	&__form-input {
+		width: 300px;
+
+		@media screen and (max-width: 450px) {
+			width: 200px;
+		}
+	}
+}

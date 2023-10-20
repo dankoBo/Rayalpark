@@ -1,0 +1,29 @@
+.subscribe {
+	text-align: center;
+
+	&__subtitle {
+		font-family: $font-roboto-500;
+		font-size: 20px;
+		line-height: 150%;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $color-black-pearl;
+		opacity: 0.8;
+	}
+
+	&__title {
+		padding: 20px 0 50px;
+	}
+
+	&__form-input {
+		width: 500px;
+
+		@media screen and (max-width: 600px) {
+			max-width: 300px;
+		}
+
+		@media screen and (max-width: 450px) {
+			max-width: 200px;
+		}
+	}
+}

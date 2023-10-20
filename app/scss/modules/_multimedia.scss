@@ -1,0 +1,47 @@
+.multimedia {
+	padding: 140px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 1200px) {
+		padding: 140px 10px;
+	}
+
+	@media screen and (max-width: 900px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__image {
+		margin-left: -100px;
+
+		@media screen and (max-width: 1200px) {
+			padding: 30px;
+		}
+
+		@media screen and (max-width: 900px) {
+			padding: 30px 0;
+			margin: 0;
+		}
+	}
+
+	&__heading {
+		max-width: 430px;
+
+		&-subtitle {
+			font-family: $font-roboto-500;
+			font-size: 20px;
+			line-height: 150%;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: $color-denim;
+		}
+
+		&-title {
+			padding: 15px 0 30px;
+		}
+	}
+}

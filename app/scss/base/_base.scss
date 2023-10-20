@@ -1,0 +1,97 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: $color-black;
+}
+
+li {
+	list-style: none;
+}
+
+.wrapper-1140 {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.button {
+	padding: 15px 30px;
+	background-color: $color-denim;
+	color: $color-white;
+	border: 1px solid $color-denim;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.2s linear;
+	font-family: $font-roboto-500;
+	font-size: 16px;
+	line-height: 160%;
+
+	@media screen and (max-width: 600px) {
+	    padding: 10px 20px;
+	}
+
+	&:hover {
+		box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+			0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		background-color: $color-dodger-blue;
+	}
+
+	&_small {
+		padding: 10px 15px;
+	}
+
+	&_burger {
+		padding: 8px 30px;
+		margin-top: 2px;
+	}
+
+	&_none {
+		@media screen and (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	&_form {
+		position: relative;
+		right: 20px;
+	}
+}
+
+.form__input {
+	font-family: $font-roboto-regular;
+	font-size: 16px;
+	line-height: 150%;
+	color: $color-black-pearl;
+	opacity: 0.5;
+	padding: 15px;
+	border: 1px solid $color-black-pearl;
+	border-radius: 10px;
+
+	@media screen and (max-width: 600px) {
+		padding: 10px 15px;
+	}
+}
+
+.title {
+	font-family: $font-gelasio-500;
+	font-size: 32px;
+	line-height: 140%;
+	color: $color-black-pearl;
+
+	@media screen and (max-width: 600px) {
+		font-size: 26px;
+	}
+}

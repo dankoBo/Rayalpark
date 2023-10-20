@@ -1,0 +1,78 @@
+.room {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	@media screen and (max-width: 1200px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@media screen and (max-width: 600px) {
+		padding: 0 20px;
+	}
+
+	&__column {
+		padding: 15px;
+	}
+
+	&__heading {
+		margin: 0 -15px;
+
+		@media screen and (max-width: 1200px) {
+			text-align: center;
+		}
+
+		&-subtitle {
+			max-width: 440px;
+			padding: 25px 0 30px;
+			font-family: $font-roboto-regular;
+			font-size: 18px;
+			line-height: 160%;
+			color: $color-black-pearl;
+			opacity: 0.6;
+		}
+	}
+
+	&__item {
+		position: relative;
+		margin: 0 -15px;
+
+		&-img {
+			@media screen and (max-width: 1200px) {
+				width: 700px;
+			}
+
+			@media screen and (max-width: 900px) {
+				width: 100%;
+			}
+		}
+
+		&-blur {
+			padding: 25px 28px;
+			position: absolute;
+			bottom: 0;
+			backdrop-filter: blur(3px);
+			border-radius: 10px;
+
+			@media screen and (max-width: 600px) {
+				padding: 10px;
+			}
+		}
+
+		&-text {
+			font-family: $font-gelasio-500;
+			font-size: 18px;
+			line-height: 160%;
+			color: $color-black-pearl;
+		}
+	}
+
+	&__price {
+		font-family: $font-roboto-500;
+		font-size: 14px;
+		line-height: 160%;
+		color: $color-black-pearl;
+		opacity: 0.8;
+	}
+}

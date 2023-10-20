@@ -1,0 +1,140 @@
+.header {
+	background-image: url("../assets/images/header-bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	width: 100%;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: 1200px) {
+		padding: 30px 10px;
+	}
+
+	@media screen and (max-width: 900px) {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	@media screen and (max-width: 600px) {
+		justify-content: space-between;
+	}
+
+	&__menu {
+		display: flex;
+
+		@media screen and (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	&__item {
+		padding: 0 20px;
+		font-family: $font-gelasio-500;
+		font-size: 16px;
+		line-height: 150%;
+		color: $color-black-pearl;
+	}
+
+	&__link:hover {
+		color: $color-denim;
+	}
+}
+
+.heading {
+	padding: 100px 0;
+
+	@media screen and (max-width: 1200px) {
+		padding: 100px 10px;
+	}
+
+	@media screen and (max-width: 900px) {
+		padding: 100px 40px;
+	}
+
+	&__small {
+		font-family: $font-roboto-regular;
+		font-size: 20px;
+		line-height: 150%;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: $color-denim;
+		padding-bottom: 15px;
+	}
+
+	&__big {
+		max-width: 460px;
+		font-family: $font-gelasio-600;
+		font-size: 57px;
+		line-height: 120%;
+		color: $color-black-pearl;
+		padding-bottom: 25px;
+
+		@media screen and (max-width: 600px) {
+			font-size: 40px;
+		}
+
+		&-denim {
+			color: $color-denim;
+		}
+	}
+
+	&__subtitle {
+		max-width: 350px;
+		font-family: $font-roboto-500;
+		font-size: 18px;
+		line-height: 160%;
+		color: $color-black-pearl;
+		opacity: 0.6;
+		padding-bottom: 30px;
+	}
+}
+
+.cheek {
+	background-color: rgba(255, 255, 255, 0.21);
+	backdrop-filter: blur(70px);
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: -60px;
+
+	@media screen and (max-width: 600px) {
+		max-width: 350px;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding: 0 20px;
+
+		@media screen and (max-width: 600px) {
+			padding: 0 5px;
+			margin-bottom: 2px;
+		}
+	}
+
+	&__item:nth-child(-n + 2) {
+		border-right: 1px solid #1a1a1a;
+	}
+
+	&__text {
+		font-family: $font-roboto-500;
+		font-size: 16px;
+		line-height: 160%;
+		color: $color-black-pearl;
+	}
+
+	&__date {
+		font-family: $font-roboto-regular;
+		font-size: 16px;
+		line-height: 160%;
+		color: $color-black-pearl;
+		opacity: 0.8;
+	}
+}
