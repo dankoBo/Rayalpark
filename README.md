@@ -7,8 +7,8 @@ HTML, CSS/SCSS, Gulp.
 1) Двічі натисніть лівою кнопкою миші по файлу index.html
 2) Використовуйте розширення Live Server
 3) Використовуйте npm, запустіть команди:
-   npm install - для встановлення пакетів;
-   gulp - для запуску сервера;
+   - npm install - для встановлення пакетів;
+   - gulp - для запуску сервера;
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -17,5 +17,5 @@ HTML, CSS/SCSS, Gulp.
 1) Double-click on the index.html file with the left mouse button.
 2) Use the Live Server extension.
 3) Use npm, run commands:
-   npm install - to install packages;
-   gulp - to start the server;
+   - npm install - to install packages;
+   - gulp - to start the server;
